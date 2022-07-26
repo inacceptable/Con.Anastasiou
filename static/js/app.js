@@ -64,12 +64,4 @@ $(document).on('click', '#contact-button', function(){
   fullpage_api.moveTo('anchor-forth_page', 1);
 });
 
-$(window).resize(function() {
-  if ($(this).width() > 900) {
-	$('#about-button').show();
-		$('#projects-button').show();
-		$('#contact-button').show();
-  } else {
-     throw 'blah';
-  }
-});
+
