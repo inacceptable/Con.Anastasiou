@@ -1,0 +1,524 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	box-sizing: border-box;
+}
+#first_page
+{
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+	background: url("/static/images/background.c030b870df58.svg");
+	background-size: 100%; 
+	height: 100vh;
+	background-repeat: repeat;
+	
+}
+div
+{
+	user-select: none;
+}
+#person
+{
+	width: 100%;
+	height: auto;
+	float: right;
+	
+}
+
+#laptop-text rect
+{
+	animation: laptop-color-change3 4s linear infinite alternate;
+}
+#triangle-1
+{
+	animation: laptop-color-change1 4s linear infinite alternate;
+}
+#triangle-2
+{
+	animation: laptop-color-change2 4s linear infinite alternate;
+}
+@keyframes laptop-color-change1 {
+	to {
+    fill:#090e1f;
+  }
+
+}
+@keyframes laptop-color-change2 {
+	to {
+    fill:#293359;
+  }
+
+}
+@keyframes laptop-color-change3 {
+	to {
+    fill:#34eb9b;
+  }
+
+}
+
+#second_page
+{
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+	background: url("/static/images/background2.71279a7199c9.svg");
+	background-size: 100%; 
+	height: 100vh;
+	background-repeat: repeat;
+	 
+}
+.contact-container-content a 
+{
+	text-decoration: none;
+}
+#email-button
+{
+	background-color: #0072C6;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 3em;
+	height: 100px;
+	cursor: pointer;
+	user-select: none;
+	width: 100% ;
+}
+.right
+{
+	text-align: center;
+}
+#github-button
+{
+	background-color: #171515;
+	margin-top: 4%;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 3em;
+	height: 100px;
+	cursor: pointer;
+	user-select: none;
+	width: 100% ;
+}
+.project-item div 
+{
+	display: inline;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto ;
+	margin-bottom: 5%;
+}
+.project-item-button
+{
+	width: 40px; 
+	margin-bottom: 5%;
+}
+
+h1
+{
+	user-select: none;
+}
+.project-item a 
+{
+	display: block;
+	border: 3px solid black;
+	float: left;
+	width: 50%;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 3%; 
+}
+.project-item a:hover
+{
+	background-color: #0384fc;
+
+	transition: all .2s ease-in;
+}
+#third_page
+{
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-top: 5%;
+	background: url("/static/images/background3.d59417540a4c.svg");
+	background-size: 100%; 
+	height: 100vh;
+	background-repeat: repeat;
+	 
+}
+#forth_page 
+{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	padding-left: 5%;
+	background: url("/static/images/background4.59d9504d81b8.svg");
+	background-size: 100%; 
+	height: 100vh;
+	background-repeat: repeat;
+	 
+}
+.header
+{
+	color: white;
+	display: inline-grid;
+	margin-top: 14%;
+	width: 100%;
+	grid-template-columns: 40% 60%;
+}
+
+.header-text
+{
+	width: 100%;
+	font-size: 5em;
+	border-radius: 20px;
+	color: #5f4b66;
+}
+
+
+#wave, #education-svg, #work-svg, #mind-svg{
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
+.nav-grid-greating
+{
+
+	overflow: hidden;
+}
+
+.typed-out{
+  overflow: hidden;
+  border-right: .15em solid orange;
+  font-size: 1em;
+  white-space: nowrap;
+   animation: 
+    4s typing-erase 4s steps(50, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing-erase {
+  0% { width: 0 }
+  80% { width: 95% }
+  90%, 100% { width: 0 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray }
+}
+.social-icons
+{
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap: 3.33% ;
+	width: 100%;
+}
+
+.social-icon
+{
+	width: 70px;
+	fill: blue;
+	height: auto;
+}
+
+.social-icon:hover
+{
+	background-color: #3ea5b5;
+	padding: 7%;
+	cursor: pointer;
+	border-radius: 5px; 
+}
+#page-navigator
+{
+	position: absolute;
+
+	top: 0;margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+	overflow: hidden;
+    width: 95%; 
+
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+    	margin-top: 2%;
+
+    	z-index:2;
+
+}
+.nav-grid-items
+{
+   
+    width: 90%; 
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    padding: 1%;
+
+    margin-left: 5%;
+}
+
+.nav-grid
+{
+	width: 100%;
+	display: grid;
+	background-color: rgba(18,36,48);
+	padding: 1%;
+    border-radius: 5px;
+	grid-template-columns: 20% 80%;
+
+	  color: white;
+}
+.about-container
+{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 40% 60%; 
+}
+
+#programming-language-image
+{
+	width: 50px ;
+}
+#about-page-screen 
+{
+	animation: about-page-screen-color-change 6s linear infinite alternate;
+}
+
+@keyframes about-page-screen-color-change {
+	to {
+    fill:#2775e3;
+  }
+
+}
+.about-box1-item
+{
+	animation: about-box1-item-color-change 2s linear infinite alternate;
+}
+
+@keyframes about-box1-item-color-change {
+	to {
+    fill:#ed11ba;
+  }
+
+}
+.about-box2-item
+{
+	animation: about-box2-item-color-change 4s linear infinite alternate;
+}
+
+@keyframes about-box2-item-color-change {
+	to {
+    fill:#03fcb1;
+  }
+
+}
+.programming-language-container
+{
+	display: grid;
+	width: 100%;
+
+	grid-template-columns: 20% 20% 20% 20% ;
+	grid-gap: 4%;
+	justify-items: end;
+}
+#work-svg
+{
+	width: 100px;
+	position: relative;
+}
+#mind-svg
+{
+	width: 90px;
+}
+.about-container-div2
+{
+	padding: 3%; 
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 5px; 
+	 
+
+}
+
+
+.hide
+{
+	display: none;
+}
+
+.projects-container
+{
+
+	background-color: ;
+	border-radius: 5px;
+	width: 100%; 
+	display: inline-block;
+	margin: 0 auto; 
+}
+.contact-container
+{
+width: 100%;
+	display: grid;
+	grid-template-columns: 20% 60% 20%; 
+
+}
+
+.contact-container-content
+{
+	padding: 3%; 
+	width: 90%;
+	margin: 0 auto;
+	background-color: white;
+	border-radius: 5px; 
+
+}
+.projects-container-content
+{
+	padding: 3%; 
+	background-color: #edf2f4;
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 5px; 
+	height: auto;
+
+}
+.projects-container-graphics
+{
+
+}
+.contact-icon{
+	width: 100px;
+	margin-bottom: 5%;
+	text-align: center;
+}
+
+.project-item-container
+{
+	width: 90%; 
+	margin: 0 auto; 
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	justify-content: space-around;
+	grid-gap: 3.33%; 
+
+}
+.projects-container-content hr, .contact-container-content hr
+{
+	margin-left: 5%;
+	caret-color: rgba(0,0,0,0);
+	color: #0384fc;
+	height: 30px;
+	width: 90%;
+	user-select: none;
+	border-radius: 3px;
+}
+
+.contact-container-content hr
+{
+	width: 100%;
+	margin-left: 0;
+}
+.project-item-icon
+{
+	width: 50px;
+	height:  auto;
+}
+
+.project-item
+{
+	background-color: white;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.project-item-description
+{
+	min-height: 130px;
+}
+.project-item h1
+{
+	font-size: 1em;
+	height: 40px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-color: #e5e5e5;
+	color: black;
+	text-transform: uppercase;
+}
+.about-container-div2 h1, .contact-container-content h1
+{
+	background-color: #eeeeee;
+	border-radius: 3px;
+	text-align: center;
+
+	user-select: none;
+	color: black;
+	margin-bottom: 3%;
+}
+.about-svg 
+{
+	width: 100%;
+
+	height: auto;
+	user-select: none;
+}
+
+
+#wave
+{
+	width: 70px;
+	height: auto;
+	z-index:0;
+}
+
+.nav-down
+{
+	top: -150px;
+}
+
+.nav-item
+{
+
+	font-size: 2em;
+	text-align: center;
+	border-radius: 10px;
+	user-select: none;
+	color: white;
+	cursor: pointer;
+	border-radius: 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+.selected 
+{
+	background-color: black; 
+	color: white;
+}
+.nav-item:hover 
+{
+	background-color: black;
+	border-radius: ;
+	color: white;
+	transition: all .2s ease-in;
+}
