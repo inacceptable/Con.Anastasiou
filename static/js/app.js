@@ -18,7 +18,6 @@ $('document').ready(function() {
 	})
 	
 	$('.dark_mode_button').click(function() {
-		$('.dark_mode_button').toggleClass('dark_mode_active');
 		$('.first_page').toggleClass('first_page_dark_mode');
 		$('.second_page').toggleClass('second_page_dark_mode');
 		$('.third_page').toggleClass('third_page_dark_mode');
@@ -31,6 +30,7 @@ $('document').ready(function() {
 		$('.social-icon').toggleClass('social-icon_dark_mode');
 		$('.nav-item').toggleClass('nav-item_dark_mode');
 		$('.fp-right').toggleClass('white-text');
+		$('.dark-mode-icon-path').toggleClass('dark-mode-icon-path_active');
 		$('#dark-mode-icon-circle').toggleClass('dark-mode-icon-circle_active');
 	})
 	$.fn.fullpage.reBuild();
