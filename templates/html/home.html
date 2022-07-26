@@ -16,6 +16,7 @@
 		<script src="{% static 'js/app.js' %}"> </script>
 		<link rel="stylesheet" type="text/css" href="{% static 'css/fullpage.css' %}" />
 		<script type="text/javascript" src="{% static 'js/fullpage.js' %}"></script>
+		<script type="text/javascript" src="https://cdn.rawgit.com/asvd/dragscroll/master/dragscroll.js"></script>
 	</head>
 	<body>
 		<script type="text/javascript">
@@ -205,7 +206,7 @@
 					<div class='projects-container-content'>
 						<h1 style='margin-left:5%;'>Web Development Projects</h1>
 						<hr class='rule'/>
-						<div class='project-item-container'>
+						<div class='project-item-container dragscroll'>
 							<div class='project-item'>
 								<h1>Fileshare app</h1>
 								<img src="{% static 'images/icons/dropbox.svg' %}" alt="" class='project-item-icon'>
