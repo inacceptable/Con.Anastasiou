@@ -752,6 +752,6 @@ grid-auto-columns: none;
   .contact-container-content
   {
   	grid-template-columns: 100%;
-  	padding-bottom: 6%;
+  	padding-bottom: 15%;
   }
 }
