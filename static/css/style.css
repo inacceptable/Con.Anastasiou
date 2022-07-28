@@ -712,6 +712,7 @@ hr.rule-dark_mode
   }
   .about-container
   {
+  	width: 100%;
   	grid-template-columns: 100%;
   	padding-top: 5%;
   	padding-bottom: 15%;
@@ -723,6 +724,7 @@ hr.rule-dark_mode
   .about-container-div2
   {
   	padding-bottom: 10%;
+  	width: 100%;
   }
   .projects-container
   {
@@ -735,6 +737,10 @@ hr.rule-dark_mode
   	grid-template-columns: 100%;
 	grid-auto-flow: row;
 grid-auto-columns: none;
+  }
+  .projects-container-content
+  {
+  	width: 100%;
   }
   .first_page, .second_page, .third_page, .forth_page
   {
