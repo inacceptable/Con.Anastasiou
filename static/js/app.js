@@ -1,17 +1,14 @@
 $('document').ready(function() {
-	new fullpage('#fullpage', {
-
+	$('#fullpage').fullpage({
      css3: true,
                 scrollingSpeed: 1000,
                 navigation: true,
                 slidesNavigation: true,
                 controlArrows: false,
+                scrollbars: true,
                 scrollOverflow: true, // even though this is set to true, it's not working
-                scrollOverflowOptions: {
-                    scrollbars: false,
-                },
+                
             });
-
 	$('#email-button').click(function() {
 		alert("Please check your default outlook application or email: \n con.anastasiou@outlook.com");
 
@@ -33,7 +30,6 @@ $('document').ready(function() {
 		$('.dark-mode-icon-path').toggleClass('dark-mode-icon-path_active');
 		$('#dark-mode-icon-circle').toggleClass('dark-mode-icon-circle_active');
 	})
-	$.fn.fullpage.reBuild();
 	var prevScrollpos = window.pageYOffset;
 			window.onscroll = function() {
 			var currentScrollPos = window.pageYOffset;
@@ -64,4 +60,6 @@ $(document).on('click', '#contact-button', function(){
   fullpage_api.moveTo('anchor-forth_page', 1);
 });
 
-
+setTimeout(function(){
+    $.fn.fullpage.reBuild();
+}, 100);
