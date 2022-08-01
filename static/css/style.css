@@ -150,15 +150,30 @@ div
 }
 #email-button
 {
-	background-color: #38424d;
+	background-color: #bac6d1;
 	color: white;
-	border-radius: 5px;
 	text-align: center;
 	font-size: 3em;
 	height: 100px;
 	cursor: pointer;
 	user-select: none;
 	width: 100% ;
+	width: 100% ;
+	-webkit-box-shadow: 0 0 5px 2px #1f2024;
+    -moz-box-shadow: 0 0 5px 2px #1f2024;
+    box-shadow: 0 0 5px 2px #1f2024;
+}
+#github-button:hover
+{
+	-webkit-box-shadow: 0 0 8px 5px #1f2024;
+    -moz-box-shadow: 0 0 8px 5px #1f2024;
+    box-shadow: 0 0 5px 8px #1f2024;
+}
+#email-button:hover
+{
+		-webkit-box-shadow: 0 0 8px 5px #1f2024;
+    -moz-box-shadow: 0 0 8px 5px #1f2024;
+    box-shadow: 0 0 5px 8px #1f2024;
 }
 .right
 {
@@ -166,15 +181,17 @@ div
 }
 #github-button
 {
-	background-color: #38424d;
+	background-color: #bac6d1;
 	color: white;
-	border-radius: 5px;
 	text-align: center;
 	font-size: 3em;
 	height: 100px;
 	cursor: pointer;
 	user-select: none;
 	width: 100% ;
+	-webkit-box-shadow: 0 0 5px 2px #1f2024;
+    -moz-box-shadow: 0 0 5px 2px #1f2024;
+    box-shadow: 0 0 5px 2px #1f2024;
 }
 .project-item div 
 {
@@ -305,22 +322,17 @@ h1
 	grid-template-columns: auto auto auto;
 	grid-gap: 5% ;
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 5%;
 }
 
 .social-icon
 {
 	width: 50px;
 	height: auto;
+	cursor: pointer;
 }
 
-.social-icon:hover
-{
-	background-color: #3ea5b5;
-	padding: 7%;
-	cursor: pointer;
-	border-radius: 5px; 
-}
+
 
 .nav-container
 {
@@ -448,7 +460,7 @@ text-align: center;
 	padding: 3%; 
 	width: 100%;
 	margin: 0 auto;
-	background-color: white;
+	background-color: #495059;
 	height: auto;
 	border-radius: 5px; 
 	display: grid;
