@@ -19,7 +19,11 @@
 	height: auto;
 	background-repeat: no-repeat;
 }
-
+#search-button:hover	
+{
+	background-color: black !important;
+	color: white !important;
+}
 .dark_mode_button{
 
 	cursor: pointer;
@@ -443,6 +447,34 @@ text-align: center;
 	width: 100%; 
 	margin: 0 auto; 
 }
+.contact-page-svg-heading-container
+{
+	width: 100%;
+}
+#contact-page-svg
+{
+	width: 100%;
+}
+#at_sign_one
+{
+}
+@keyframes contact-heading-color-change {
+  0% { background-color: #55edf2; }
+  25% { background-color: #3f4f8a; }
+  50% { background-color: #f2555f; }
+  75% { background-color: #64d1a2; }
+  100% { background-color: #d1dee8; }
+}
+
+#contact-page-heading
+{
+	background-color: black;
+	color: white;
+	margin-bottom: 3%;
+	border-radius: 3px;
+	border: 10px solid #9ca0ad;
+	animation: contact-heading-color-change 10s infinite;
+}
 .contact-container
 {
 	width: 90%;
@@ -453,6 +485,15 @@ text-align: center;
     background-color: #0a1926;
     padding: 5%;
   border-radius: 10px;
+}
+.contact-container1
+{
+	background-color: white;
+	padding: 2%; 
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
+	margin-bottom: 3%
 }
 
 .contact-container-content
@@ -467,8 +508,18 @@ text-align: center;
 	grid-template-columns: 40% 40%;
 	grid-gap: 10%;
 	justify-content: center;
+	margin-top: 2%;
 
 }
+#contact-page-svg-circle
+{
+	animation-name: wave-contact-head-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 3s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  position: absolute;
+}
+
+
 .contact-container-content a 
 {
 	text-decoration: none;
@@ -529,6 +580,20 @@ cursor: grab;
 {
 	width: 100%;
 	margin-left: 0;
+}
+#contact-page-email-svg:hover, #contact-github-svg:hover
+{
+	transition-duration: 1s;
+	transform: scale(1.2)
+}
+#contact-page-email-svg, #contact-github-svg
+{
+	display: block;
+	width: 100px;
+	height: auto;
+	cursor: pointer;
+	margin: 0 auto;
+
 }
 .project-item-icon
 {
@@ -766,4 +831,75 @@ grid-auto-columns: none;
   	grid-template-columns: 100%;
   	padding-bottom: 15%;
   }
+}
+
+*{ box-sizing: border-box; }
+.container{
+    display: inline-block;
+}
+.end1, .middle1, .middle2{
+    display: inline-block;
+    overflow:hidden;
+    height: 1.5em;
+}
+.end2{
+    position:absolute;
+    color:#ff6a00
+}
+.middle1, .middle2{
+    color: #cfcfcf
+}
+.middle1 {
+    animation: ani1 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+.middle2 {
+    animation: ani2 5s infinite;
+    animation-delay: -3s;
+    max-width: 0;
+}
+
+@keyframes ani1 {
+    0% {
+    max-width: 500px;
+  }
+  
+  25% {
+    max-width: 0;
+  }
+  
+  75% {
+    max-width: 0;
+  }
+  
+  90% {
+    max-width: 500px;
+  }
+  
+  100% {
+    max-width: 500px;
+  }
+}
+
+@keyframes ani2 {
+    0% {
+        max-width: 0;
+    }
+
+    25% {
+        max-width: 0;
+    }
+
+    50% {
+        max-width: 500px;
+    }
+
+    75% {
+        max-width: 0;
+    }
+
+    100% {
+        max-width: 0;
+    }
 }
